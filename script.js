@@ -1,8 +1,8 @@
-```javascript
+ 
 // =================================
 // 1. PAGE LOAD MESSAGE
 // =================================
-
+// java script 
 // Website open hone par Console mein message show hoga
 console.log("Welcome to Archana's Portfolio!");
 
@@ -61,4 +61,4 @@ contact.addEventListener("click", function() {
     console.log("You are viewing the Contact section.");
 
 });
-```
+

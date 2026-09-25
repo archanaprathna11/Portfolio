@@ -1,0 +1,424 @@
+```css
+/* =================================
+   BASIC PAGE SETTINGS
+   ================================= */
+
+/* Puri website ka font */
+body {
+
+    font-family: Arial, sans-serif;
+
+    /* Browser ka default margin remove */
+    margin: 0;
+
+    /* Website ka overall background */
+    background: #f5f7fa;
+
+    /* Normal text ka colour */
+    color: #222;
+}
+
+
+
+/* =================================
+   NAVBAR
+   ================================= */
+
+/* Navigation bar ka design */
+nav {
+
+    background: #111827;
+
+    padding: 18px;
+
+    /* Links ko center mein lana */
+    text-align: center;
+
+    /* Scroll karne par navbar top par rahega */
+    position: sticky;
+
+    top: 0;
+
+    /* Navbar ko baaki content ke upar rakhna */
+    z-index: 1000;
+}
+
+
+/* Navbar ke andar links */
+nav a {
+
+    color: white;
+
+    /* Link ki default underline remove */
+    text-decoration: none;
+
+    /* Links ke beech space */
+    margin: 0 15px;
+
+    font-weight: bold;
+}
+
+
+/* Mouse le jaane par link ka colour change */
+nav a:hover {
+
+    color: #60a5fa;
+}
+
+
+
+/* =================================
+   ALL SECTIONS
+   ================================= */
+
+/* Har section ki common styling */
+section {
+
+    padding: 70px 20px;
+
+    /* Content center */
+    text-align: center;
+}
+
+
+
+/* =================================
+   HOME SECTION
+   ================================= */
+
+#home {
+
+    /* Home section ka background */
+    background: #1e3a8a;
+
+    /* Text white */
+    color: white;
+
+    /* Home section ko bada space */
+    padding: 120px 20px;
+}
+
+
+/* Main heading */
+#home h1 {
+
+    font-size: 45px;
+
+    margin-bottom: 10px;
+}
+
+
+/* Home ka second heading */
+#home h2 {
+
+    color: #dbeafe;
+}
+
+
+
+/* =================================
+   GENERAL HEADINGS
+   ================================= */
+
+h2 {
+
+    color: #2563eb;
+
+    font-size: 32px;
+}
+
+
+h3 {
+
+    color: #1e3a8a;
+}
+
+
+
+/* =================================
+   ABOUT SECTION
+   ================================= */
+
+#about {
+
+    background: #eef4ff;
+}
+
+
+/* About section ke paragraphs */
+#about p {
+
+    max-width: 750px;
+
+    /* Paragraph ko center */
+    margin: 15px auto;
+
+    /* Lines ke beech spacing */
+    line-height: 1.7;
+
+    font-size: 17px;
+}
+
+
+
+/* =================================
+   SKILLS SECTION
+   ================================= */
+
+/* Skills ke individual items */
+#skills p {
+
+    /* Ek line mein card jaisa */
+    display: inline-block;
+
+    background: white;
+
+    color: #1e3a8a;
+
+    padding: 15px 25px;
+
+    margin: 8px;
+
+    border-radius: 10px;
+
+    /* Card ke neeche halka shadow */
+    box-shadow: 0 3px 10px #ddd;
+}
+
+
+/* Skills card par mouse le jaane par */
+#skills p:hover {
+
+    transform: translateY(-3px);
+
+}
+
+
+
+/* =================================
+   PROJECTS SECTION
+   ================================= */
+
+#projects {
+
+    background: #f5f7fa;
+}
+
+
+/* Har project ka card */
+#projects div {
+
+    background: white;
+
+    padding: 25px;
+
+    margin: 20px auto;
+
+    /* Card ki maximum width */
+    max-width: 500px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 3px 12px #ddd;
+
+    /* Animation smooth karne ke liye */
+    transition: 0.3s;
+}
+
+
+/* Project card hover effect */
+#projects div:hover {
+
+    /* Card thoda upar move hoga */
+    transform: translateY(-5px);
+}
+
+
+
+/* =================================
+   EDUCATION SECTION
+   ================================= */
+
+#education {
+
+    background: white;
+}
+
+
+#education p {
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+
+/* =================================
+   CURRENTLY LEARNING
+   ================================= */
+
+#learning {
+
+    background: #eef4ff;
+}
+
+
+/* JavaScript, Java, SQL, DSA
+   ko small cards banana */
+#learning p {
+
+    display: inline-block;
+
+    background: white;
+
+    padding: 12px 20px;
+
+    margin: 8px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 3px 10px #ddd;
+}
+
+
+/* Learning card hover */
+#learning p:hover {
+
+    transform: translateY(-3px);
+}
+
+
+
+/* =================================
+   CONTACT SECTION
+   ================================= */
+
+#contact {
+
+    background: #111827;
+
+    color: white;
+}
+
+
+/* Contact heading */
+#contact h2 {
+
+    color: #60a5fa;
+}
+
+
+/* Contact ke paragraphs */
+#contact p {
+
+    margin: 12px;
+}
+
+
+
+/* =================================
+   BUTTONS
+   ================================= */
+
+/* View Projects aur Contact Me buttons */
+.btn {
+
+    /* Button ko proper box banana */
+    display: inline-block;
+
+    background: white;
+
+    color: #1e3a8a;
+
+    padding: 12px 22px;
+
+    margin: 15px 5px;
+
+    border-radius: 8px;
+
+    /* Underline remove */
+    text-decoration: none;
+
+    font-weight: bold;
+
+    /* Hover animation smooth */
+    transition: 0.3s;
+}
+
+
+/* Button par mouse le jaane par */
+.btn:hover {
+
+    background: #60a5fa;
+
+    color: white;
+
+    transform: translateY(-2px);
+}
+
+
+
+/* =================================
+   SMOOTH SCROLLING
+   ================================= */
+
+/* Navbar link click karne par
+   page smoothly scroll karega */
+html {
+
+    scroll-behavior: smooth;
+}
+
+
+
+/* =================================
+   MOBILE RESPONSIVE
+   ================================= */
+
+/* Jab screen 600px ya usse chhoti ho */
+@media (max-width: 600px) {
+
+
+    /* Navbar links vertically aa jayenge */
+    nav a {
+
+        display: block;
+
+        margin: 10px;
+    }
+
+
+    /* Mobile mein Home heading chhoti */
+    #home h1 {
+
+        font-size: 32px;
+    }
+
+
+    /* Mobile mein Home subtitle */
+    #home h2 {
+
+        font-size: 20px;
+    }
+
+
+    /* Mobile mein section ka padding */
+    section {
+
+        padding: 50px 15px;
+    }
+
+
+    /* Mobile mein buttons ek ke neeche ek */
+    .btn {
+
+        display: block;
+
+        width: 180px;
+
+        margin: 12px auto;
+    }
+
+}
+```
